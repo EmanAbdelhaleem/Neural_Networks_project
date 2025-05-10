@@ -8,7 +8,7 @@ This project aims to classify diseases in plant leaves using deep learning techn
 
 The project utilizes the **PlantVillage Dataset**, a publicly available dataset containing images of healthy and diseased plant leaves.
 * **Source:** Kaggle
-* **Link to a version of the dataset:** [PlantVillage Dataset]((https://www.kaggle.com/datasets/emmarex/plantdisease/data))
+* **Link to a version of the dataset:** [PlantVillage Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease/data)
 * **Details:** The dataset used in this project contains approximately 20,639 images across 15 different classes of plants and diseases. Some class imbalance was noted during exploration.
 
 ## Methodology
@@ -27,6 +27,7 @@ The project follows a systematic approach to image classification:
         * ResNet50
         * VGG16
         * InceptionV3
+          
         These models had their final layers replaced with custom dense layers suitable for the specific classification task.
 4.  **Model Training:**
     * Models were compiled using the Adam optimizer and categorical cross-entropy loss function.
@@ -59,16 +60,3 @@ The performance of different models was compared. Based on the analysis:
     * Matplotlib & Seaborn (for data visualization)
 * **Environment:** Jupyter Notebook (Run on Kaggle with GPU acceleration)
 
-## File Structure
-
-* `plant-disease-classification.ipynb`: The main Jupyter Notebook containing all the code for data processing, model building, training, and evaluation.
-
-## Setup and Usage
-
-1.  **Clone the repository (if applicable).**
-2.  **Ensure you have a Python environment with the necessary libraries installed.** You can typically install them using pip:
-    ```bash
-    pip install tensorflow pandas numpy matplotlib seaborn scikit-learn
-    ```
-3.  **Dataset:** Download the PlantVillage dataset from Kaggle. You might need to adjust the file paths in the notebook (`/kaggle/input/plantdisease/PlantVillage`) if you run it locally, to point to where you've stored the dataset.
-4.  **Run the Jupyter Notebook:** Open and run the `plant-disease-classification.ipynb` notebook in a Jupyter environment. If using GPU, ensure your TensorFlow installation is GPU-compatible and drivers are correctly set up.
